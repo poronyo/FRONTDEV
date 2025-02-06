@@ -1,5 +1,3 @@
-import React from "react";
-
 function About() {
   return (
     <div className="flex flex-col justify-around h-screen">
