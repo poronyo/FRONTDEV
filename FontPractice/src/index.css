@@ -1,5 +1,34 @@
 @import "tailwindcss";
 
+/* Custome Theme*/
+
+@theme {
+  --font-display: "Satoshi", "sans-serif";
+  --color-mint-500: oklch(0.72 0.11 178);
+  --color-mint-700: oklch(0.5 0.11 178);
+  --color-mint-900: oklch(0.3 0.11 178);
+}
+
+/* custom for whole project */
+
+@layer base {
+  body {
+    @apply bg-yellow-900 text-gray-700;
+    @apply font-sans antialiased;
+  }
+  a {
+    @apply text-white;
+  }
+}
+
+/* custom for each component */
+@layer components {
+  /* Base button styles */
+  .btn {
+    @apply px-4 py-2 min-w-36 text-white rounded cursor-pointer transition-all duration-200;
+  }
+}
+
 /*
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
