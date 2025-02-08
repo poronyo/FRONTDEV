@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import { Link } from "react-router";
 import { FiMenu } from "react-icons/fi";
 function Header() {
   const [isOpened, setIsOpened] = useState<boolean>(false);
@@ -8,40 +8,40 @@ function Header() {
     <nav className="w-screen  bg-gradient-to-r from-blue-700 to-blue-400  text-white">
       <div className="container mx-auto flex items-center justify-between p-3 ">
         {/* Logo & Brand */}
-        <a className="text-xl  font-bold " href="">
+        <Link className="text-xl  font-bold " to="/">
           {"<Parinya T/>"}
-        </a>
+        </Link>
 
         {/* Upper Menu Desktop */}
         <ul
-          className={` hidden w-full  md:flex md:justify-end lg:flex  p-4 space-x-7   `}
+          className={` hidden w-full  md:flex md:justify-end   p-4 space-x-7   `}
         >
           <li>
-            <a href="#" className="  hover:text-gray-500 ">
+            <Link to="/" className="  hover:text-gray-500 ">
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#" className="hover:text-gray-500 ">
+            <Link to="/about" className="hover:text-gray-500 ">
               About
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#" className="hover:text-gray-500 ">
+            <Link to="/button" className="hover:text-gray-500 ">
               Service
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#" className="hover:text-gray-500 ">
+            <Link to="/contact" className="hover:text-gray-500 ">
               Contact
-            </a>
+            </Link>
           </li>
         </ul>
 
         {/* Hamburger Menu (Mobile)  */}
         <button>
           <FiMenu
-            className="w-6 h-6 md:hidden lg:hidden cursor-pointer"
+            className="w-6 h-6 md:hidden cursor-pointer"
             onClick={() => setIsOpened(() => !isOpened)}
           />
         </button>
@@ -49,29 +49,29 @@ function Header() {
 
       {/* Mobile Menu (Mobile)  */}
       <ul
-        className={`  md:hidden lg:hidden p-4 gap-4 flex flex-col items-center transition-all duration-400 ease-in-out transform ${
+        className={`  md:hidden  p-4 gap-4 flex flex-col items-center transition-all duration-400 ease-in-out transform ${
           isOpened ? " blocked" : " hidden"
         } `}
       >
         <li>
-          <a href="#" className="  hover:text-gray-500 ">
+          <Link to="/" className="  hover:text-gray-500 ">
             Home
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#" className="hover:text-gray-500 ">
+          <Link to="/about" className="hover:text-gray-500 ">
             About
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#" className="hover:text-gray-500 ">
+          <Link to="/button" className="hover:text-gray-500 ">
             Service
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#" className="hover:text-gray-500 ">
+          <Link to="/contact" className="hover:text-gray-500 ">
             Contact
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>
