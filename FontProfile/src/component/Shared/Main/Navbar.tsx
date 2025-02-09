@@ -16,8 +16,9 @@ function Navbar() {
   const menuButtonRef = useRef<HTMLButtonElement>(null);
 
   const navigation = [
+    { name: "Home", path: "/" },
     { name: "Company", path: "/company" },
-    { name: "Pricing", path: "/pricing" },
+    // { name: "Pricing", path: "/pricing" },
     { name: "Blog", path: "/blog" },
     { name: "Terms", path: "/terms" },
   ];
@@ -28,6 +29,13 @@ function Navbar() {
 
   const handleMobileMenuClick = () => {
     setIsOpen(!isOpen);
+  };
+
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = "./public/Parinya Tosuwan resume update 2024 rev.7.pdf";
+    link.download = "Parinya Tosuwan resume update 2024 rev.7.pdf";
+    link.click();
   };
 
   return (
@@ -49,31 +57,6 @@ function Navbar() {
           {/*DESKTOP MENU ITEMS */}
           <div className="hidden text-center lg:flex lg:items-center ">
             <ul className=" items-center justify-end liet-none flex-1 pt-6  lg:pt-0 lg:flex ">
-              {/* PRODUCT DROP DOWN */}
-              <li className="relative mr-3">
-                <button
-                  className="inline-flex items-center px-4 py-2 text-lg font-normal no-underline rounded-md
-             hover:text-indigo-500  focus:text-indigo-500      focus:bg-indigo-100 
-             dark:text-gray-300     dark:hover:text-indigo-400 dark:focus:bg-gray-800 focus:outline-hidden "
-                  //   onClick={productMenus.map((menuDropdown) => (
-                  //     <Link key={menuDropdown.name} to={menuDropdown.href}>
-                  //       {menuDropdown.name}
-                  //     </Link>
-                  //   ))}
-                >
-                  Home
-                </button>
-              </li>
-              <li className="relative mr-3">
-                <button
-                  className="inline-flex items-center px-4 py-2 text-lg font-normal no-underline rounded-md
-             hover:text-indigo-500  focus:text-indigo-500      focus:bg-indigo-100 
-             dark:text-gray-300     dark:hover:text-indigo-400 dark:focus:bg-gray-800 focus:outline-hidden "
-                >
-                  Feature
-                </button>
-              </li>
-
               {/* Other navigation items */}
               {navigation.map((item) => (
                 <li className="mr-3" key={item.name}>
@@ -97,10 +80,11 @@ function Navbar() {
             <DarkSwitch />
             <div className="hidden mr-3 lg:flex nav__item">
               <Link
-                to="/login"
+                to="/"
+                onClick={handleDownload}
                 className="px-6 py-2 text-white bg-indigo-600 rounded-md hover:bg-indigo-700"
               >
-                Sign In
+                RESUME
               </Link>
             </div>
           </div>
@@ -121,21 +105,21 @@ function Navbar() {
               ref={mobileMenuRef}
               className="flex flex-wrap w-full my-5 lg:hidden"
             >
-              {/* Products in mobile */}
-              <button
-                className="flex items-center justify-between w-full px-4 py-2 text-lg font-normal text-left hover:text-indigo-500
-                                                                                                             dark:text-gray-300 dark:hover:text-indigo-400"
-              >
-                <span>Products</span>
-              </button>
-
-              {/* Features in mobile */}
-              <button
-                className="flex items-center justify-between w-full px-4 py-2 text-lg font-normal text-left hover:text-indigo-500
-                                                                                                             dark:text-gray-300 dark:hover:text-indigo-400"
-              >
-                <span>Features</span>
-              </button>
+              {/* Other navigation items */}
+              {navigation.map((item) => (
+                <Link
+                  key={item.name}
+                  to={item.path}
+                  className={`w-full px-4 py-2 text-lg font-normal text-left hover:text-indigo-500 dark:text-gray-300 dark:hover:text-indigo-400
+                    ${
+                      location.pathname === item.path
+                        ? "text-indigo-600 dark:text-indigo-400"
+                        : ""
+                    }`}
+                >
+                  {item.name}
+                </Link>
+              ))}
 
               {/* Get Started button */}
               <Link

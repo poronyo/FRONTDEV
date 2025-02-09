@@ -4,7 +4,7 @@ import Cta from "@/component/Home/Cta";
 import Faq from "@/component/Home/Faq";
 import Hero from "@/component/Home/Hero";
 import Testimonials from "@/component/Home/Testimonials";
-import Video from "@/component/Home/Video";
+
 import SectionTitle from "@/component/Shared/Main/SectionTitle";
 import { useEffect } from "react";
 
@@ -31,19 +31,6 @@ export default function Home() {
       {/* Benefits */}
       <Benefits imgPos="left" data={benefitOne} />
       <Benefits imgPos="right" data={benefitTwo} />
-
-      {/* SectionTitle */}
-      <SectionTitle
-        preTitle="Watch a video"
-        title="Learn how to fullfil your needs"
-      >
-        This section is to highlight a promo or demo video of your product.
-        Analysts says a landing page with video has 3% more conversion rate. So,
-        don&apos;t forget to add one. Just like this.
-      </SectionTitle>
-
-      {/* Video */}
-      <Video videoId="CLkxRnRQtDE" />
 
       {/* SectionTitle */}
       <SectionTitle

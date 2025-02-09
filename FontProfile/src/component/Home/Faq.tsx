@@ -27,18 +27,6 @@ const faqData: FaqItem[] = [
   },
 ];
 
-export default function Faq() {
-  return (
-    <Container>
-      <div className="w-full max-w-2xl p-2 mx-auto rounded-2xl">
-        {faqData.map((item, index) => (
-          <FaqItem key={index} item={item} />
-        ))}
-      </div>
-    </Container>
-  );
-}
-
 function FaqItem({ item }: { item: FaqItem }) {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -79,5 +67,17 @@ function FaqItem({ item }: { item: FaqItem }) {
         </div>
       )}
     </div>
+  );
+}
+
+export default function Faq() {
+  return (
+    <Container>
+      <div className="w-full max-w-2xl p-2 mx-auto rounded-2xl">
+        {faqData.map((item, index) => (
+          <FaqItem key={index} item={item} />
+        ))}
+      </div>
+    </Container>
   );
 }
