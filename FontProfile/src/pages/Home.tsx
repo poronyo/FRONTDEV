@@ -20,12 +20,12 @@ export default function Home() {
 
       {/* SectionTitle */}
       <SectionTitle
-        preTitle="WindReact"
-        title="Modern Web Design for startups"
+        preTitle="background"
+        title="Who is him and why he is here"
         align="center"
       >
-        WindReact is a modern web design & marketing website for startups and
-        indie projects. Its built with React & Tailwind CSS 4.0
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+        excepturi ipsa necessitatibus tempora odit corrupti amet eligendi quas
       </SectionTitle>
 
       {/* Benefits */}

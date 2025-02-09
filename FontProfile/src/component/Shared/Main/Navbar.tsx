@@ -39,7 +39,7 @@ function Navbar() {
             <Link to="/">
               <span className="flex items-center space-x-2 text-2xl font-semibold dark:text-white">
                 <span>
-                  <img src="/images/wrlogo.png" alt="" className="w-8" />
+                  <img src="/images/P logo.png" alt="" className="w-8" />
                 </span>
                 <span>ParinyaT</span>
               </span>

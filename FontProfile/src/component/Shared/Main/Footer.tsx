@@ -24,8 +24,8 @@ export default function Footer() {
                 to="/"
                 className="flex items-center space-x-2 text-2xl font-medium text-gray-800 dark:text-gray-200"
               >
-                <img src="/images/wrlogo.png" alt="" className="w-8" />
-                <span>WindReact</span>
+                <img src="/images/P logo.png" alt="" className="w-8" />
+                <span>ParinyaT</span>
               </Link>
             </div>
 

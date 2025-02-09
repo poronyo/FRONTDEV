@@ -60,15 +60,18 @@ export default function Hero() {
           <div className="max-w-2xl mb-8">
             <h1 className="text-4xl text-center font-bold leading-snug tracking-tight text-gray-800 dark:text-white lg:text-left lg:text-4xl lg:leading-tight xl:text-6xl xl:leading-tight">
               {/* Modern Web Design for Startups & Indie Projects */}
-              การออกแบบเว็บสมัยใหม่สำหรับสตาร์ทอัพและโปรเจกต์อิสระ
+              Welcome Visitored.
             </h1>
             <div className="py-5 text-xl leading-normal text-gray-500 dark:text-gray-400 lg:text-xl xl:text-2xl">
               {/* WindReact is a modern web design & marketing website
               template for startups and indie projects. Its built with
               React 19 & Tailwind CSS 4.0 and its free to use. */}
-              WindReact เป็นเทมเพลตเว็บไซต์สำหรับการออกแบบและการตลาดที่ทันสมัย
-              เหมาะสำหรับสตาร์ทอัพและโปรเจกต์อิสระ พัฒนาโดยใช้ React 19 และ
-              Tailwind CSS 4.0 และสามารถใช้งานได้ฟรี
+              Take a look for a while,I hope you will enjoy my Profile Project
+              and as you know this web have plenty of bug and un sense ,UI good
+              tour.
+            </div>
+            <div className="py-5 text-xl leading-normal text-gray-500 dark:text-gray-400 lg:text-xl xl:text-2xl">
+              Parinya T.
             </div>
 
             <div className="flex flex-col items-center space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">
@@ -77,7 +80,7 @@ export default function Hero() {
                 className="w-full sm:w-auto px-6 py-3 text-lg font-medium text-center text-white bg-indigo-600 hover:bg-indigo-700 rounded-md"
               >
                 {/* Get Started Now */}
-                เริ่มใช้งานทันที
+                Start below
               </a>
               <a
                 href="#"
@@ -148,49 +151,50 @@ export default function Hero() {
       <Container>
         <div className="flex flex-col justify-center">
           <div className="text-xl text-center text-gray-700 dark:text-gray-300">
-            ได้รับความไว้วางใจจากลูกค้ากว่า
-            <span className="text-indigo-600 dark:text-indigo-400">
-              2000+
+            An Engineer Looking forward to work with
+            <span className="text-indigo-600 dark:text-indigo-400 px-2">
+              !! YOUR !!
             </span>{" "}
-            รายทั่วโลก
+            company
           </div>
 
           <div className="flex flex-wrap justify-center gap-5 mt-10 md:justify-around">
-            <div className="pt-2">
+            <div className="field-sizing-fixed w-30 h-1">
               <img
-                src="/images/brands/amazon.svg"
-                alt="Amazon logo"
-                className="brightness-0 dark:invert opacity-30 hover:opacity-50 transition-opacity"
-              />
-            </div>
-            <div>
-              <img
-                src="/images/brands/verizon.svg"
-                alt="Verizon logo"
-                className="brightness-0 dark:invert opacity-30 hover:opacity-50 transition-opacity"
-              />
-            </div>
-            <div>
-              <img
-                src="/images/brands/microsoft.svg"
-                alt="Microsoft logo"
+                src="/images/brands/KMITL.png"
+                alt="KMITL logo"
                 className="brightness-0 dark:invert opacity-30 hover:opacity-50 transition-opacity"
               />
             </div>
             <div className="pt-1">
               <img
-                src="/images/brands/netflix.svg"
-                alt="Netflix logo"
+                src="/images/brands/Growatt.png"
+                alt="Growatt logo"
                 className="brightness-0 dark:invert opacity-30 hover:opacity-50 transition-opacity"
               />
             </div>
-            <div className="pt-2">
+            <div className="field-sizing-fixed w-20 h-1">
+              <img
+                src="/images/brands/BYD.png"
+                alt="BYD logo"
+                className="brightness-0 dark:invert opacity-30 hover:opacity-50 transition-opacity"
+              />
+            </div>
+            <div className="field-sizing-fixed w-20 h-1">
+              <img
+                src="/images/brands/SYSlogo.png"
+                alt="SYS logo"
+                className="brightness-0 dark:invert opacity-30 hover:opacity-50 transition-opacity"
+              />
+            </div>
+
+            {/* <div className="pt-2">
               <img
                 src="/images/brands/sony.svg"
                 alt="Sony logo"
                 className="brightness-0 dark:invert opacity-30 hover:opacity-50 transition-opacity"
               />
-            </div>
+            </div> */}
           </div>
         </div>
       </Container>
