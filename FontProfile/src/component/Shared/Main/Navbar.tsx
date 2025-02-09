@@ -41,7 +41,7 @@ function Navbar() {
                 <span>
                   <img src="/images/wrlogo.png" alt="" className="w-8" />
                 </span>
-                <span>WindReact</span>
+                <span>ParinyaT</span>
               </span>
             </Link>
           </div>
