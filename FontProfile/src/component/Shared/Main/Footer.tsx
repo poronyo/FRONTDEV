@@ -13,7 +13,7 @@ export default function Footer() {
     { name: "Home", path: "/" },
     { name: "Company", path: "/company" },
     // { name: "Pricing", path: "/pricing" },
-    { name: "Blog", path: "/blog" },
+    { name: "Project", path: "/project" },
   ];
   const legal = [
     { name: "Lorem", href: "/" },

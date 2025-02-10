@@ -8,7 +8,7 @@ interface BlogPost {
   excerpt: string;
   category: string;
   date: string;
-  author: {
+  tools: {
     name: string;
     image: string;
   };
@@ -16,64 +16,104 @@ interface BlogPost {
   featured?: boolean;
 }
 
-export default function Blog() {
+export default function Project() {
   useEffect(() => {
-    document.title = "Blog | WindReact";
+    document.title = "Project | Parinya";
   }, []);
 
   const blogPosts: BlogPost[] = [
     {
       id: 1,
-      title: "The Future of Web Development: What's Next in 2024",
+      title: "Pokédex Web Design",
       excerpt:
-        "Explore the latest trends and technologies shaping the future of web development, from AI integration to advanced frameworks.",
-      category: "Technology",
-      date: "Mar 16, 2024",
-      author: {
-        name: "John Doe",
-        image: "/images/team/1.jpg",
+        "My  Fronted Development Learning Project using React typescript and tailwind with pokeAPI ",
+      category: "Frontend Dev ",
+      date: "Dec , 2024",
+      tools: {
+        name: "React Typescript",
+        image: "/images/team/React-icon.png",
       },
-      image: "/images/blog/post1.jpg",
+      image: "/images/blog/pokeindex_img.png",
       featured: true,
     },
     {
       id: 2,
-      title: "10 Tips for Building Better React Applications",
+      title: "Project Development Certificate",
       excerpt:
-        "Learn the best practices and patterns for creating scalable and maintainable React applications.",
-      category: "Development",
-      date: "Mar 14, 2024",
-      author: {
-        name: "Jane Smith",
-        image: "/images/team/2.png",
+        "Certificated a first step in PMI (Project Management Institute) Learning fundamental of agile,water fall project development  ",
+      category: "Project Development",
+      date: "DEC, 2024",
+      tools: {
+        name: "PMI",
+        image: "/images/team/pmi_logo.svg",
       },
-      image: "/images/blog/post2.jpg",
+      image: "/images/blog/PMI_CERT.jpg",
     },
     {
       id: 3,
-      title: "Mastering Tailwind CSS: Advanced Techniques",
+      title: "Human detection in Manufacturing ",
       excerpt:
-        "Deep dive into advanced Tailwind CSS techniques and learn how to create custom designs efficiently.",
-      category: "Design",
-      date: "Mar 12, 2024",
-      author: {
-        name: "Mike Johnson",
-        image: "/images/team/3.png",
+        "Image processing Project in manufactuing using python to detect staff in specific area and automated send alarm to Line notification ",
+      category: "Image processing",
+      date: "Nov , 2024",
+      tools: {
+        name: "Python",
+        image: "/images/team/python.png",
       },
-      image: "/images/blog/post3.jpg",
+      image: "/images/blog/Image_processing_project.jpg",
     },
     {
       id: 4,
-      title: "The Complete Guide to Modern Web Animation",
+      title: "Mastering Tailwind CSS: Advanced Techniques Learning",
+      excerpt:
+        "Deep dive into advanced Tailwind CSS techniques and learn how to create custom designs efficiently.",
+      category: "Design",
+      date: "Aug, 2024",
+      tools: {
+        name: "Tailwind CSS",
+        image: "/images/team/tailwind.png",
+      },
+      image: "/images/blog/TailwindPost.jpg",
+    },
+    {
+      id: 5,
+      title: " Modern Web Animation Learning",
       excerpt:
         "Discover how to create engaging web animations that enhance user experience without sacrificing performance.",
       category: "Design",
-      date: "Mar 10, 2024",
-      author: {
-        name: "Sarah Williams",
-        image: "/images/team/4.webp",
+      date: "July, 2024",
+      tools: {
+        name: "Tailwind CSS",
+        image: "/images/team/tailwind.png",
       },
-      image: "/images/blog/post4.jpg",
+      image: "/images/blog/DesignPost.jpg",
+    },
+
+    {
+      id: 6,
+      title: "Machine Learning Professional Certication",
+      excerpt:
+        "Learning how to use Classification, Regression, Correlations, Feature Importance, Clustering and Association Rules  ",
+      category: "Machine Learning",
+      date: "Mar, 2024",
+      tools: {
+        name: "Python",
+        image: "/images/team/python.png",
+      },
+      image: "/images/blog/RapidMiner_Cert_ML.png",
+    },
+    {
+      id: 7,
+      title: "Data Engineering  Professional Certication",
+      excerpt:
+        "Learning how to use Data Access, Basic Transformations, Working with Multiple Data Sets, Pivot Tables, Routines and Simple Text Processing. ",
+      category: "Machine Learning",
+      date: "Mar , 2024",
+      tools: {
+        name: "Python",
+        image: "/images/team/python.png",
+      },
+      image: "/images/blog/RapidMiner_Cert_DE.png",
     },
   ];
 
@@ -86,26 +126,18 @@ export default function Blog() {
         {/* Hero Section */}
         <div className="text-center">
           <SectionTitle
-            preTitle="Blog"
-            title="Our Latest Updates and Insights"
+            preTitle="project"
+            title="My hand on Experience  "
             align="center"
           >
-            Stay up to date with the latest news, tutorials, and insights about
-            web development and design.
+            Stay up to date with my latest activities, Experience, and self
+            improvement inspiration.
           </SectionTitle>
         </div>
 
         {/* Featured Post */}
         {featuredPost && (
           <div className="mb-20">
-            <SectionTitle
-              preTitle="Featured Post"
-              title="Editor's Pick"
-              align="center"
-            >
-              Don't miss our most important updates and featured content.
-            </SectionTitle>
-
             <div className="mt-12 overflow-hidden bg-white dark:bg-gray-800 rounded-2xl shadow-lg">
               <div className="grid gap-8 md:grid-cols-2">
                 <div className="relative h-64 md:h-full">
@@ -132,16 +164,16 @@ export default function Blog() {
                   </p>
                   <div className="flex items-center gap-4 mt-8">
                     <img
-                      src={featuredPost.author.image}
-                      alt={featuredPost.author.name}
+                      src={featuredPost.tools.image}
+                      alt={featuredPost.tools.name}
                       className="w-10 h-10 rounded-full"
                     />
                     <div>
                       <p className="font-semibold text-gray-900 dark:text-white">
-                        {featuredPost.author.name}
+                        {featuredPost.tools.name}
                       </p>
                       <p className="text-sm text-gray-500 dark:text-gray-400">
-                        Author
+                        Tailwind CSS
                       </p>
                     </div>
                   </div>
@@ -154,12 +186,12 @@ export default function Blog() {
         {/* Blog Posts Grid */}
         <div className="pb-20">
           <SectionTitle
-            preTitle="Latest Posts"
-            title="Recent Articles"
+            preTitle="Latest Activity"
+            title="Recent Expereince"
             align="center"
           >
-            Read our latest articles and tutorials about web development and
-            design.
+            Check my latest project and experience about web development and
+            Data analyst .
           </SectionTitle>
 
           <div className="grid gap-8 mt-12 sm:grid-cols-2 lg:grid-cols-3">
@@ -192,12 +224,12 @@ export default function Blog() {
                   </p>
                   <div className="flex items-center gap-3 mt-6">
                     <img
-                      src={post.author.image}
-                      alt={post.author.name}
+                      src={post.tools.image}
+                      alt={post.tools.name}
                       className="w-8 h-8 rounded-full"
                     />
                     <span className="text-sm font-medium text-gray-900 dark:text-white">
-                      {post.author.name}
+                      {post.tools.name}
                     </span>
                   </div>
                 </div>

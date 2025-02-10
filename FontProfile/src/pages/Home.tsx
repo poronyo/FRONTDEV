@@ -4,7 +4,6 @@ import Cta from "@/component/Home/Cta";
 import Faq from "@/component/Home/Faq";
 import Hero from "@/component/Home/Hero";
 import Testimonials from "@/component/Home/Testimonials";
-
 import SectionTitle from "@/component/Shared/Main/SectionTitle";
 import { useEffect } from "react";
 

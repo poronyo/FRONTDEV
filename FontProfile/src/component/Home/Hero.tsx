@@ -17,6 +17,11 @@ const slides = [
     image: "/images/363456.jpg",
     alt: "Hero Illustration 3",
   },
+  {
+    id: 4,
+    image: "/images/ProfileImage1.jpg",
+    alt: "Hero Illustration 4",
+  },
 ];
 
 export default function Hero() {
