@@ -17,6 +17,7 @@ interface BenefitsProps {
 }
 export const Benefits = (props: Readonly<BenefitsProps>) => {
   const { data } = props;
+
   return (
     <Container className="flex flex-wrap mb-20 lg:gap-10 lg:flex-nowrap ">
       <div

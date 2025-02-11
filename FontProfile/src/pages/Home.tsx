@@ -5,17 +5,25 @@ import Faq from "@/component/Home/Faq";
 import Hero from "@/component/Home/Hero";
 import Testimonials from "@/component/Home/Testimonials";
 import SectionTitle from "@/component/Shared/Main/SectionTitle";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 
 export default function Home() {
   useEffect(() => {
     document.title = "Home | ParinyaT";
   }, []);
 
+  const benefitsRef = useRef<HTMLDivElement | null>(null);
+
+  const scrollToBenefits = () => {
+    if (benefitsRef.current) {
+      benefitsRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="max-w-screen-xl mx-auto">
       {/* Hero */}
-      <Hero />
+      <Hero scrollToBenefits={scrollToBenefits} />
 
       {/* SectionTitle */}
       <SectionTitle
@@ -28,9 +36,10 @@ export default function Home() {
       </SectionTitle>
 
       {/* Benefits */}
-      <Benefits imgPos="left" data={benefitOne} />
-      <Benefits imgPos="right" data={benefitTwo} />
-
+      <div ref={benefitsRef}>
+        <Benefits imgPos="left" data={benefitOne} />
+        <Benefits imgPos="right" data={benefitTwo} />
+      </div>
       {/* SectionTitle */}
       <SectionTitle
         preTitle="Testimonials"

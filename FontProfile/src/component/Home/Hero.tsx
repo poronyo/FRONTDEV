@@ -24,7 +24,11 @@ const slides = [
   },
 ];
 
-export default function Hero() {
+interface HeroProps {
+  scrollToBenefits: () => void; // Function type with no parameters and no return value
+}
+
+export default function Hero({ scrollToBenefits }: HeroProps) {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isLoaded, setIsLoaded] = useState(false);
 
@@ -81,7 +85,7 @@ export default function Hero() {
 
             <div className="flex flex-col items-center space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">
               <a
-                href="#"
+                onClick={scrollToBenefits}
                 className="w-full sm:w-auto px-6 py-3 text-lg font-medium text-center text-white bg-indigo-600 hover:bg-indigo-700 rounded-md"
               >
                 {/* Get Started Now */}
