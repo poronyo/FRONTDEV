@@ -88,36 +88,44 @@ export default function Company() {
         {/* Stats */}
         <div className="grid grid-cols-2 gap-8 mt-16 text-center lg:grid-cols-4">
           <div className="flex flex-col">
-            <dt className="text-lg font-medium text-gray-600 dark:text-gray-400">
-              Years
-            </dt>
-            <dd className="text-4xl font-bold tracking-tight text-indigo-600 dark:text-indigo-400">
-              <CountUp end={2025 - 1998} duration={20} />
-            </dd>
+            <dl>
+              <dt className="text-lg font-medium text-gray-600 dark:text-gray-400">
+                Years
+              </dt>
+              <dd className="text-4xl font-bold tracking-tight text-indigo-600 dark:text-indigo-400">
+                <CountUp end={2025 - 1998} duration={20} />
+              </dd>
+            </dl>
           </div>
           <div className="flex flex-col">
-            <dt className="text-lg font-medium text-gray-600 dark:text-gray-400">
-              Companies
-            </dt>
-            <dd className="text-4xl font-bold tracking-tight text-indigo-600 dark:text-indigo-400">
-              <CountUp end={4} duration={5} />
-            </dd>
+            <dl>
+              <dt className="text-lg font-medium text-gray-600 dark:text-gray-400">
+                Companies
+              </dt>
+              <dd className="text-4xl font-bold tracking-tight text-indigo-600 dark:text-indigo-400">
+                <CountUp end={4} duration={5} />
+              </dd>
+            </dl>
           </div>
           <div className="flex flex-col">
-            <dt className="text-lg font-medium text-gray-600 dark:text-gray-400">
-              Countries
-            </dt>
-            <dd className="text-4xl font-bold tracking-tight text-indigo-600 dark:text-indigo-400">
-              <CountUp end={2} duration={4} />
-            </dd>
+            <dl>
+              <dt className="text-lg font-medium text-gray-600 dark:text-gray-400">
+                Countries
+              </dt>
+              <dd className="text-4xl font-bold tracking-tight text-indigo-600 dark:text-indigo-400">
+                <CountUp end={2} duration={4} />
+              </dd>
+            </dl>
           </div>
           <div className="flex flex-col">
-            <dt className="text-lg font-medium text-gray-600 dark:text-gray-400">
-              Projects
-            </dt>
-            <dd className="text-4xl font-bold tracking-tight text-indigo-600 dark:text-indigo-400">
-              <CountUp end={30} duration={10} suffix="+" />
-            </dd>
+            <dl>
+              <dt className="text-lg font-medium text-gray-600 dark:text-gray-400">
+                Projects
+              </dt>
+              <dd className="text-4xl font-bold tracking-tight text-indigo-600 dark:text-indigo-400">
+                <CountUp end={30} duration={10} suffix="+" />
+              </dd>
+            </dl>
           </div>
         </div>
       </div>
