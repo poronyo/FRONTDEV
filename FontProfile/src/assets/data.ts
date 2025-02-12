@@ -6,7 +6,7 @@ import {
 
 import { DiHtml5, DiCss3, DiJavascript1, DiReact } from "react-icons/di";
 
-import benefitOneImg from "/images/hero3.webp";
+import benefitOneImg from "/images/hero4.webp";
 import benefitTwoImg from "/images/hero2.webp";
 
 const benefitOne = {

@@ -5,15 +5,10 @@ import CountUp from "react-countup";
 import { JSX } from "react";
 
 import { FaPython, FaDatabase } from "react-icons/fa";
-import {
-  GiPowerGenerator,
-  GiElectric,
-  GiJerusalemCross,
-  GiCctvCamera,
-} from "react-icons/gi";
+import { GiPowerGenerator, GiElectric, GiJerusalemCross } from "react-icons/gi";
 import { MdElectricCar } from "react-icons/md";
 import { RiPresentationFill } from "react-icons/ri";
-import { SiPostman, SiMysql } from "react-icons/si";
+import { SiPostman, SiMysql, SiSiemens } from "react-icons/si";
 
 interface CompanyValue {
   title: string;
@@ -72,7 +67,7 @@ export default function Company() {
         <GiJerusalemCross className="w-6 h-6" />,
         <FaDatabase className="w-6 h-6" />,
         <SiMysql className="w-6 h-6" />,
-        <GiCctvCamera className="w-6 h-6" />,
+        <SiSiemens className="w-9 h-9" />,
         <SiPostman className="w-6 h-6" />,
       ],
       image: "/images/brands/SYSlogo.png",
@@ -84,11 +79,7 @@ export default function Company() {
       {/* Hero Section */}
       <div className="flex flex-col items-center justify-center w-full">
         <div className="text-center">
-          <SectionTitle
-            preTitle="About"
-            title="About My Experience"
-            align="center"
-          >
+          <SectionTitle preTitle="About" title=" My Experience" align="center">
             We're a dynamic team of creative minds, developers, and marketers
             committed to transforming ideas into impactful digital experiences.
           </SectionTitle>
@@ -135,11 +126,11 @@ export default function Company() {
       <div className="py-10">
         <SectionTitle
           preTitle="Skill"
-          title="My skill & Ability"
+          title="My skill & Abilities"
           align="center"
         >
-          What am I Learning in each company. These values shape everything we
-          do and guide our decisions.
+          What am I Learning in each company. These values shape everything I do
+          and guide my decisions.
         </SectionTitle>
 
         <div className="grid gap-8 mt-12 md:grid-cols-3 max-w-screen-xl mx-auto">

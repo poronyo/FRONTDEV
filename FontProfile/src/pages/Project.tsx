@@ -31,7 +31,7 @@ export default function Project() {
       date: "Dec , 2024",
       tools: {
         name: "React Typescript",
-        image: "/images/team/React-icon.png",
+        image: "/images/skill/React-icon.png",
       },
       image: "/images/blog/pokeindex_img.png",
       featured: true,
@@ -45,7 +45,7 @@ export default function Project() {
       date: "DEC, 2024",
       tools: {
         name: "PMI",
-        image: "/images/team/pmi_logo.svg",
+        image: "/images/skill/pmi_logo.svg",
       },
       image: "/images/blog/PMI_CERT.jpg",
     },
@@ -58,7 +58,7 @@ export default function Project() {
       date: "Nov , 2024",
       tools: {
         name: "Python",
-        image: "/images/team/python.png",
+        image: "/images/skill/python.png",
       },
       image: "/images/blog/Image_processing_project.jpg",
     },
@@ -71,7 +71,7 @@ export default function Project() {
       date: "Aug, 2024",
       tools: {
         name: "Tailwind CSS",
-        image: "/images/team/tailwind.png",
+        image: "/images/skill/tailwindLogo.png",
       },
       image: "/images/blog/TailwindPost.jpg",
     },
@@ -84,7 +84,7 @@ export default function Project() {
       date: "July, 2024",
       tools: {
         name: "Tailwind CSS",
-        image: "/images/team/tailwind.png",
+        image: "/images/skill/tailwind.png",
       },
       image: "/images/blog/DesignPost.jpg",
     },
@@ -98,7 +98,7 @@ export default function Project() {
       date: "Mar, 2024",
       tools: {
         name: "Python",
-        image: "/images/team/python.png",
+        image: "/images/skill/python.png",
       },
       image: "/images/blog/RapidMiner_Cert_ML.png",
     },
@@ -111,7 +111,7 @@ export default function Project() {
       date: "Mar , 2024",
       tools: {
         name: "Python",
-        image: "/images/team/python.png",
+        image: "/images/skill/python.png",
       },
       image: "/images/blog/RapidMiner_Cert_DE.png",
     },
