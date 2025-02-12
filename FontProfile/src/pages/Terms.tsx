@@ -3,7 +3,7 @@ import { useEffect } from "react";
 
 export default function Terms() {
   useEffect(() => {
-    document.title = "Terms & Conditions | WindReact";
+    document.title = "Terms & Conditions | Parinya";
   }, []);
 
   return (

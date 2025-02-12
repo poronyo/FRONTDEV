@@ -6,7 +6,7 @@ import Company from "@/pages/Company";
 import Project from "@/pages/Project";
 import Terms from "@/pages/Terms";
 import Policy from "@/pages/Policy";
-import Legal from "@/pages/Legal";
+import Contact from "@/pages/Contact";
 import Login from "@/pages/Login";
 import Register from "@/pages/Register";
 import Forgotpassword from "@/pages/Forgotpassword";
@@ -43,8 +43,8 @@ const router = createBrowserRouter([
         element: <Policy />,
       },
       {
-        path: "/legal",
-        element: <Legal />,
+        path: "/contact",
+        element: <Contact />,
       },
     ],
   },

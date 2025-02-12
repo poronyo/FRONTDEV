@@ -20,7 +20,7 @@ function Navbar() {
     { name: "Company", path: "/company" },
     // { name: "Pricing", path: "/pricing" },
     { name: "Project", path: "/project" },
-    { name: "Terms", path: "/terms" },
+    { name: "Contact", path: "/contact" },
   ];
 
   const handleMenuClick = () => {

@@ -12,13 +12,12 @@ export default function Footer() {
   const navigation = [
     { name: "Home", path: "/" },
     { name: "Company", path: "/company" },
-    // { name: "Pricing", path: "/pricing" },
     { name: "Project", path: "/project" },
+    { name: "Contact", path: "/contact" },
   ];
   const legal = [
-    { name: "Lorem", href: "/" },
-    { name: "Lorem", href: "/" },
-    { name: "Lorem", href: "/" },
+    { name: "", href: "/" },
+    { name: "", href: "/" },
   ];
 
   return (
