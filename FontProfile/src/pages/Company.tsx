@@ -84,7 +84,11 @@ export default function Company() {
       {/* Hero Section */}
       <div className="flex flex-col items-center justify-center w-full">
         <div className="text-center">
-          <SectionTitle preTitle="About" title="About WindReact" align="center">
+          <SectionTitle
+            preTitle="About"
+            title="About My Experience"
+            align="center"
+          >
             We're a dynamic team of creative minds, developers, and marketers
             committed to transforming ideas into impactful digital experiences.
           </SectionTitle>
@@ -130,11 +134,12 @@ export default function Company() {
       {/* Company Values */}
       <div className="py-10">
         <SectionTitle
-          preTitle="Our Values"
-          title="What drives us forward"
+          preTitle="Skill"
+          title="My skill & Ability"
           align="center"
         >
-          These core values shape everything we do and guide our decisions.
+          What am I Learning in each company. These values shape everything we
+          do and guide our decisions.
         </SectionTitle>
 
         <div className="grid gap-8 mt-12 md:grid-cols-3 max-w-screen-xl mx-auto">

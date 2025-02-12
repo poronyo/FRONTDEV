@@ -3,13 +3,13 @@ import { Benefits } from "@/component/Home/Benefits";
 import Cta from "@/component/Home/Cta";
 import Faq from "@/component/Home/Faq";
 import Hero from "@/component/Home/Hero";
-import Testimonials from "@/component/Home/Testimonials";
+// import Testimonials from "@/component/Home/Testimonials";
 import SectionTitle from "@/component/Shared/Main/SectionTitle";
 import { useEffect, useRef } from "react";
 
 export default function Home() {
   useEffect(() => {
-    document.title = "Home | ParinyaT";
+    document.title = "Home | Parinya";
   }, []);
 
   const benefitsRef = useRef<HTMLDivElement | null>(null);
@@ -40,22 +40,23 @@ export default function Home() {
         <Benefits imgPos="left" data={benefitOne} />
         <Benefits imgPos="right" data={benefitTwo} />
       </div>
+
       {/* SectionTitle */}
-      <SectionTitle
+      {/* <SectionTitle
         preTitle="Testimonials"
         title="Here's what our customers said"
       >
         Testimonials is a great way to increase the brand trust and awareness.
         Use this section to highlight your popular customers.
-      </SectionTitle>
+      </SectionTitle> */}
 
       {/* Testimonials */}
-      <Testimonials />
+      {/* <Testimonials /> */}
 
       {/* SectionTitle */}
-      <SectionTitle preTitle="FAQ" title="Frequently Asked Questions">
-        Answer your customers possible questions here, it will increase the
-        conversion rate as well as support or chat requests.
+      <SectionTitle preTitle="More skill" title="Additional Experience">
+        In addition to the above abilities, there are other abilities in each
+        filled as follows:
       </SectionTitle>
 
       {/* FAQ */}

@@ -1,5 +1,6 @@
 import Container from "../Shared/Main/Container";
 import { useState } from "react";
+import { IoIosArrowDropdown } from "react-icons/io";
 
 interface FaqItem {
   question: string;
@@ -8,22 +9,19 @@ interface FaqItem {
 
 const faqData: FaqItem[] = [
   {
-    question: "Is this template completely free to use?",
-    answer: "Yes, this template is completely free to use.",
-  },
-  {
-    question: "Can I use it in a commercial project?",
-    answer: "Yes, this template is licensed under MIT license.",
-  },
-  {
-    question: "What is your refund policy? ",
+    question: "Electric vehicle ?",
     answer:
-      "If you're unhappy with your purchase for any reason, email us within 90 days and we'll refund you in full, no questions asked.",
+      "AT KMITL, I'm a PEA Volta application developer team. Responded in Ev charger and EV car communication test . and In growatt we are an alliance with GWM motor   ",
   },
   {
-    question: "Do you offer technical support? ",
+    question: "Data analyst ?",
     answer:
-      "No, we don't offer technical support for free downloads. Please purchase a support plan to get 6 months of support.",
+      "At SYS company, I'm a crossfunctional team member to develop production predictive project & Image processing task in company   .",
+  },
+  {
+    question: "Machine programable? ",
+    answer:
+      "At SYS company, I got an opportunity to execute robot & automation project that must use siemen PLC commissioning ",
   },
 ];
 
@@ -42,24 +40,12 @@ function FaqItem({ item }: { item: FaqItem }) {
         <p className="text-lg font-medium text-gray-800 dark:text-gray-200">
           {item.question}
         </p>
-        <div className="flex items-center justify-center w-8 h-8 border rounded-full border-gray-300 dark:border-gray-600">
-          <svg
-            viewBox="0 0 24 24"
-            className={`w-3 text-gray-600 dark:text-gray-400 transform transition-transform duration-200 ${
-              isOpen ? "rotate-180" : ""
-            }`}
-          >
-            <polyline
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeMiterlimit="10"
-              points="2,7 12,17 22,7"
-              strokeLinejoin="round"
-            />
-          </svg>
-        </div>
+
+        <IoIosArrowDropdown
+          className={`size-7 text-gray-600 dark:text-gray-400 transform transition-transform duration-200 ${
+            isOpen ? "rotate-180" : ""
+          }`}
+        />
       </button>
       {isOpen && (
         <div className="p-4 pt-4">
