@@ -37,7 +37,7 @@ export default function Company() {
     {
       title: "Growatt",
       description:
-        "As a fresh graduate working in a startup company, this place gave me the opportunity to work on real-world projects with a many world-class team in several field from hardware design to server configure. ",
+        "As a fresh graduate working in a startup company, this place gave me the opportunity to work on real-world projects with a many world-class team in several field from hardware design to server configure. Collaborating with experts across different domains also helped me refine my problem-solving skills and adopt industry-leading methodologies in engineering ",
       icons: [
         <MdElectricCar className="w-6 h-6" />,
         <SiPostman className="w-6 h-6" />,
@@ -48,7 +48,7 @@ export default function Company() {
     {
       title: "BYD",
       description:
-        "World class company with an enormous team gave me opportunity to learn with an excellent people around the world.",
+        "A world-class company with a vast team gave me the opportunity to learn from excellent professionals around the world. Working in such an environment exposed me to advanced technologies and best practices in system optimization. ",
       icons: [
         <MdElectricCar className="w-6 h-6" />,
 

@@ -58,8 +58,8 @@ export default function Contact() {
             officiis. Vel tenetur natus officiis consequatur.
           </p>
           <Link
-            to="/terms"
-            className=" inline-flex items-center text-sm font-medium text-indigo-600 hover:text-indigo-500 dark:text-indigo-400"
+            to="/contact"
+            className="cursor-not-allowed  inline-flex items-center text-sm font-medium text-indigo-600 hover:text-indigo-500 dark:text-indigo-400"
           >
             Read Terms
             <MdKeyboardArrowRight className="ml-1 w-5 h-5 text-indigo-400" />
