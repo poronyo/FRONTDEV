@@ -59,7 +59,8 @@ export default function Company() {
 
     {
       title: "Saim Yamato Steel",
-      description: "Thai Company ",
+      description:
+        "As an engineer responsible for machine analysis in my company, I have gained extensive experience in logical thinking, understanding machine behavior, and applying user experience principles. This has enabled me to create insightful reports that capture users' attention and develop intuitive dashboards simultaneously. ",
       icons: [
         <FaPython className="w-6 h-6" />,
         <GiJerusalemCross className="w-6 h-6" />,
