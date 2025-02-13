@@ -26,11 +26,10 @@ export default function Company() {
     {
       title: "KMITL",
       description:
-        "We constantly push boundaries and embrace new technologies to solve complex problems.",
+        "4 years in Electrical Engineering Bachelor degree 1 year as a Research assistance give me many valueable knowledge ad mindset as It is a good foundation for further development.  ",
       icons: [
         <GiPowerGenerator className="w-6 h-6" />,
         <GiElectric className="w-6 h-6" />,
-        <FaPython className="w-6 h-6" />,
         <FaPython className="w-6 h-6" />,
       ],
       image: "/images/brands/KMITL.png",
@@ -38,7 +37,7 @@ export default function Company() {
     {
       title: "Growatt",
       description:
-        "We believe great ideas come from working together and sharing diverse perspectives.",
+        "As a fresh graduate working in a startup company, this place gave me the opportunity to work on real-world projects with a many world-class team in several field from hardware design to server configure. ",
       icons: [
         <MdElectricCar className="w-6 h-6" />,
         <SiPostman className="w-6 h-6" />,
@@ -49,7 +48,7 @@ export default function Company() {
     {
       title: "BYD",
       description:
-        "Our customers' success is our success. We're dedicated to delivering exceptional value.",
+        "World class company with an enormous team gave me opportunity to learn with an excellent people around the world.",
       icons: [
         <MdElectricCar className="w-6 h-6" />,
 
@@ -60,8 +59,7 @@ export default function Company() {
 
     {
       title: "Saim Yamato Steel",
-      description:
-        "Our customers' success is our success. We're dedicated to delivering exceptional value.",
+      description: "Thai Company ",
       icons: [
         <FaPython className="w-6 h-6" />,
         <GiJerusalemCross className="w-6 h-6" />,
