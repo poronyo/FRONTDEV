@@ -18,17 +18,18 @@ function Navbar() {
   const navigation = [
     { name: "Home", path: "/" },
     { name: "Company", path: "/company" },
-    // { name: "Pricing", path: "/pricing" },
     { name: "Project", path: "/project" },
     { name: "Contact", path: "/contact" },
   ];
 
   const handleMenuClick = () => {
     setIsOpen(false);
+    console.log("handleMenuClick");
   };
 
   const handleMobileMenuClick = () => {
     setIsOpen(!isOpen);
+    console.log("handleMobileMenuClick");
   };
 
   const handleDownload = () => {
@@ -58,6 +59,17 @@ function Navbar() {
           <div className="hidden text-center lg:flex lg:items-center ">
             <ul className=" items-center justify-end liet-none flex-1 pt-6  lg:pt-0 lg:flex ">
               {/* Other navigation items */}
+
+              {navigation.map((item) => (
+                <li className="" key={item.name}>
+                  <Link
+                    to={item.path}
+                    onClick={handleMenuClick}
+                    className=""
+                  ></Link>
+                </li>
+              ))}
+
               {navigation.map((item) => (
                 <li className="mr-3" key={item.name}>
                   <Link
@@ -75,10 +87,11 @@ function Navbar() {
             </ul>
           </div>
 
-          {/* SIGNED IN  */}
-          <div className="flex items-center gap-3 nav__item mr-2 lg:flex ml-auto lg:ml-0 lg:order-2">
+          {/* RESUME DOWNLOAD  */}
+          <div className="nav__item flex items-center gap-3 mr-2 lg:flex ml-auto lg:ml-0 lg:order-2">
             <DarkSwitch />
-            <div className="hidden mr-3 lg:flex nav__item">
+
+            <div className="nav__item hidden mr-3 lg:flex ">
               <Link
                 to="/"
                 onClick={handleDownload}
@@ -110,6 +123,7 @@ function Navbar() {
                 <Link
                   key={item.name}
                   to={item.path}
+                  onClick={handleMenuClick}
                   className={`w-full px-4 py-2 text-lg font-normal text-left hover:text-indigo-500 dark:text-gray-300 dark:hover:text-indigo-400
                     ${
                       location.pathname === item.path
