@@ -2,8 +2,8 @@ import Container from "../Shared/Main/Container";
 
 const handleDownload = () => {
   const link = document.createElement("a");
-  link.href = "/Parinya Tosuwan resume update 2024 rev.7.pdf";
-  link.download = "Parinya Tosuwan resume update 2024 rev.7.pdf";
+  link.href = "/ParinyaTosuwan_RESUME.pdf";
+  link.download = "ParinyaTosuwan_RESUME.pdf";
   link.click();
 };
 

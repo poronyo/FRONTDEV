@@ -34,8 +34,8 @@ function Navbar() {
 
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "/Parinya Tosuwan resume update 2024 rev.7.pdf";
-    link.download = "Parinya Tosuwan resume update 2024 rev.7.pdf";
+    link.href = "/ParinyaTosuwan_RESUME.pdf";
+    link.download = "ParinyaTosuwan_RESUME.pdf";
     link.click();
   };
 
@@ -118,7 +118,7 @@ function Navbar() {
               ref={mobileMenuRef}
               className="flex flex-wrap w-full my-5 lg:hidden"
             >
-              {/* Other navigation items */}
+              {/* Other navigation items mobile*/}
               {navigation.map((item) => (
                 <Link
                   key={item.name}
@@ -135,12 +135,13 @@ function Navbar() {
                 </Link>
               ))}
 
-              {/* Get Started button */}
+              {/* RESUME DOWNLOAD mobile */}
               <Link
-                to="/login"
+                to="/"
+                onClick={handleDownload}
                 className="w-full px-6 py-2 mt-3 text-center text-white bg-indigo-600 rounded-md hover:bg-indigo-700"
               >
-                Sign In
+                RESUME
               </Link>
             </div>
           )}
